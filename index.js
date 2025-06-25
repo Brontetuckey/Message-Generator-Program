@@ -1,4 +1,3 @@
-// Inspirational messages.
 const messages = [
     "Use others negativity to turn it into positivity.",
     "You are stronger than your excuses and braver than your doubts.",
@@ -10,13 +9,15 @@ const messages = [
 const getRandomMessage = () => {
     const randomIndex = Math.floor(Math.random() * messages.length);
     return messages[randomIndex];
-}; // Gives one random message from my list
+};
 
 const displayMessage = () => {
-    const title = "I think you need to hear this...\n";
-    const message = getRandomMessage();
-    console.log(title + message);
-}; // Puts everything together to display the message.
+    const messageElement = document.getElementById('message');
+    messageElement.textContent = getRandomMessage();
+};
 
+// Show a message on initial load
 displayMessage();
-// Runs the program.
+
+// Add event listener to button for new messages
+document.getElementById('newMessageBtn').addEventListener('click', displayMessage);
