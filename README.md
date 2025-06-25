@@ -30,9 +30,10 @@ This JavaScript program that i have created displays a random motivational messa
 ---
 
 ## ▶️ How to Run
-
+You can simply click this link: https://brontetuckey.github.io/Message-Generator-Program/
+OR
 You will need to have Node.js installed on your computer/laptop.
-https://brontetuckey.github.io/Message-Generator-Program/
+
 
 ```bash
 # Open your terminal and navigate to the project folder
